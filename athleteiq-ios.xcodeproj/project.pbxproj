@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8EC94C72B756C3200BE8A6B /* athleteiq_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */; };
+		A8EC94C92B756C3200BE8A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94C82B756C3200BE8A6B /* ContentView.swift */; };
+		A8EC94CB2B756C3400BE8A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EC94CA2B756C3400BE8A6B /* Assets.xcassets */; };
+		A8EC94CE2B756C3400BE8A6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EC94CD2B756C3400BE8A6B /* Preview Assets.xcassets */; };
+		A8EC94D82B756C3400BE8A6B /* athleteiq_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94D72B756C3400BE8A6B /* athleteiq_iosTests.swift */; };
+		A8EC94E22B756C3400BE8A6B /* athleteiq_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94E12B756C3400BE8A6B /* athleteiq_iosUITests.swift */; };
+		A8EC94E42B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94E32B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8EC94D42B756C3400BE8A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EC94BB2B756C3200BE8A6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8EC94C22B756C3200BE8A6B;
+			remoteInfo = "athleteiq-ios";
+		};
+		A8EC94DE2B756C3400BE8A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EC94BB2B756C3200BE8A6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8EC94C22B756C3200BE8A6B;
+			remoteInfo = "athleteiq-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8EC94C32B756C3200BE8A6B /* athleteiq-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "athleteiq-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosApp.swift; sourceTree = "<group>"; };
+		A8EC94C82B756C3200BE8A6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8EC94CA2B756C3400BE8A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8EC94CD2B756C3400BE8A6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8EC94D32B756C3400BE8A6B /* athleteiq-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "athleteiq-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EC94D72B756C3400BE8A6B /* athleteiq_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosTests.swift; sourceTree = "<group>"; };
+		A8EC94DD2B756C3400BE8A6B /* athleteiq-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "athleteiq-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EC94E12B756C3400BE8A6B /* athleteiq_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosUITests.swift; sourceTree = "<group>"; };
+		A8EC94E32B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8EC94C02B756C3200BE8A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EC94D02B756C3400BE8A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EC94DA2B756C3400BE8A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8EC94BA2B756C3200BE8A6B = {
+			isa = PBXGroup;
+			children = (
+				A8EC94C52B756C3200BE8A6B /* athleteiq-ios */,
+				A8EC94D62B756C3400BE8A6B /* athleteiq-iosTests */,
+				A8EC94E02B756C3400BE8A6B /* athleteiq-iosUITests */,
+				A8EC94C42B756C3200BE8A6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8EC94C42B756C3200BE8A6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94C32B756C3200BE8A6B /* athleteiq-ios.app */,
+				A8EC94D32B756C3400BE8A6B /* athleteiq-iosTests.xctest */,
+				A8EC94DD2B756C3400BE8A6B /* athleteiq-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8EC94C52B756C3200BE8A6B /* athleteiq-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */,
+				A8EC94C82B756C3200BE8A6B /* ContentView.swift */,
+				A8EC94CA2B756C3400BE8A6B /* Assets.xcassets */,
+				A8EC94CC2B756C3400BE8A6B /* Preview Content */,
+			);
+			path = "athleteiq-ios";
+			sourceTree = "<group>";
+		};
+		A8EC94CC2B756C3400BE8A6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94CD2B756C3400BE8A6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8EC94D62B756C3400BE8A6B /* athleteiq-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94D72B756C3400BE8A6B /* athleteiq_iosTests.swift */,
+			);
+			path = "athleteiq-iosTests";
+			sourceTree = "<group>";
+		};
+		A8EC94E02B756C3400BE8A6B /* athleteiq-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94E12B756C3400BE8A6B /* athleteiq_iosUITests.swift */,
+				A8EC94E32B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift */,
+			);
+			path = "athleteiq-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8EC94C22B756C3200BE8A6B /* athleteiq-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EC94E72B756C3400BE8A6B /* Build configuration list for PBXNativeTarget "athleteiq-ios" */;
+			buildPhases = (
+				A8EC94BF2B756C3200BE8A6B /* Sources */,
+				A8EC94C02B756C3200BE8A6B /* Frameworks */,
+				A8EC94C12B756C3200BE8A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "athleteiq-ios";
+			productName = "athleteiq-ios";
+			productReference = A8EC94C32B756C3200BE8A6B /* athleteiq-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8EC94D22B756C3400BE8A6B /* athleteiq-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EC94EA2B756C3400BE8A6B /* Build configuration list for PBXNativeTarget "athleteiq-iosTests" */;
+			buildPhases = (
+				A8EC94CF2B756C3400BE8A6B /* Sources */,
+				A8EC94D02B756C3400BE8A6B /* Frameworks */,
+				A8EC94D12B756C3400BE8A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8EC94D52B756C3400BE8A6B /* PBXTargetDependency */,
+			);
+			name = "athleteiq-iosTests";
+			productName = "athleteiq-iosTests";
+			productReference = A8EC94D32B756C3400BE8A6B /* athleteiq-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8EC94DC2B756C3400BE8A6B /* athleteiq-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EC94ED2B756C3400BE8A6B /* Build configuration list for PBXNativeTarget "athleteiq-iosUITests" */;
+			buildPhases = (
+				A8EC94D92B756C3400BE8A6B /* Sources */,
+				A8EC94DA2B756C3400BE8A6B /* Frameworks */,
+				A8EC94DB2B756C3400BE8A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8EC94DF2B756C3400BE8A6B /* PBXTargetDependency */,
+			);
+			name = "athleteiq-iosUITests";
+			productName = "athleteiq-iosUITests";
+			productReference = A8EC94DD2B756C3400BE8A6B /* athleteiq-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8EC94BB2B756C3200BE8A6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A8EC94C22B756C3200BE8A6B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A8EC94D22B756C3400BE8A6B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A8EC94C22B756C3200BE8A6B;
+					};
+					A8EC94DC2B756C3400BE8A6B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A8EC94C22B756C3200BE8A6B;
+					};
+				};
+			};
+			buildConfigurationList = A8EC94BE2B756C3200BE8A6B /* Build configuration list for PBXProject "athleteiq-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8EC94BA2B756C3200BE8A6B;
+			productRefGroup = A8EC94C42B756C3200BE8A6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8EC94C22B756C3200BE8A6B /* athleteiq-ios */,
+				A8EC94D22B756C3400BE8A6B /* athleteiq-iosTests */,
+				A8EC94DC2B756C3400BE8A6B /* athleteiq-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8EC94C12B756C3200BE8A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EC94CE2B756C3400BE8A6B /* Preview Assets.xcassets in Resources */,
+				A8EC94CB2B756C3400BE8A6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EC94D12B756C3400BE8A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EC94DB2B756C3400BE8A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8EC94BF2B756C3200BE8A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EC94C92B756C3200BE8A6B /* ContentView.swift in Sources */,
+				A8EC94C72B756C3200BE8A6B /* athleteiq_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EC94CF2B756C3400BE8A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EC94D82B756C3400BE8A6B /* athleteiq_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EC94D92B756C3400BE8A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EC94E42B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift in Sources */,
+				A8EC94E22B756C3400BE8A6B /* athleteiq_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8EC94D52B756C3400BE8A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8EC94C22B756C3200BE8A6B /* athleteiq-ios */;
+			targetProxy = A8EC94D42B756C3400BE8A6B /* PBXContainerItemProxy */;
+		};
+		A8EC94DF2B756C3400BE8A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8EC94C22B756C3200BE8A6B /* athleteiq-ios */;
+			targetProxy = A8EC94DE2B756C3400BE8A6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8EC94E52B756C3400BE8A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8EC94E62B756C3400BE8A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8EC94E82B756C3400BE8A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"athleteiq-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = AF2AZG4JPF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8EC94E92B756C3400BE8A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"athleteiq-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = AF2AZG4JPF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8EC94EB2B756C3400BE8A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF2AZG4JPF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/athleteiq-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/athleteiq-ios";
+			};
+			name = Debug;
+		};
+		A8EC94EC2B756C3400BE8A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF2AZG4JPF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/athleteiq-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/athleteiq-ios";
+			};
+			name = Release;
+		};
+		A8EC94EE2B756C3400BE8A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF2AZG4JPF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "athleteiq-ios";
+			};
+			name = Debug;
+		};
+		A8EC94EF2B756C3400BE8A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AF2AZG4JPF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "athleteiq-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8EC94BE2B756C3200BE8A6B /* Build configuration list for PBXProject "athleteiq-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EC94E52B756C3400BE8A6B /* Debug */,
+				A8EC94E62B756C3400BE8A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EC94E72B756C3400BE8A6B /* Build configuration list for PBXNativeTarget "athleteiq-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EC94E82B756C3400BE8A6B /* Debug */,
+				A8EC94E92B756C3400BE8A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EC94EA2B756C3400BE8A6B /* Build configuration list for PBXNativeTarget "athleteiq-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EC94EB2B756C3400BE8A6B /* Debug */,
+				A8EC94EC2B756C3400BE8A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EC94ED2B756C3400BE8A6B /* Build configuration list for PBXNativeTarget "athleteiq-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EC94EE2B756C3400BE8A6B /* Debug */,
+				A8EC94EF2B756C3400BE8A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8EC94BB2B756C3200BE8A6B /* Project object */;
+}
