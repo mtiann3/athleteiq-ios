@@ -14,6 +14,18 @@
 		A8EC94D82B756C3400BE8A6B /* athleteiq_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94D72B756C3400BE8A6B /* athleteiq_iosTests.swift */; };
 		A8EC94E22B756C3400BE8A6B /* athleteiq_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94E12B756C3400BE8A6B /* athleteiq_iosUITests.swift */; };
 		A8EC94E42B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94E32B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift */; };
+		A8EC94F82B7AB09800BE8A6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94F72B7AB09800BE8A6B /* LoginView.swift */; };
+		A8EC94FA2B7AB21300BE8A6B /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94F92B7AB21300BE8A6B /* InputView.swift */; };
+		A8EC94FC2B7C0B0A00BE8A6B /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94FB2B7C0B0A00BE8A6B /* RegistrationView.swift */; };
+		A8EC94FE2B7D508100BE8A6B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94FD2B7D508100BE8A6B /* ProfileView.swift */; };
+		A8EC95002B7D539500BE8A6B /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94FF2B7D539500BE8A6B /* SettingsRowView.swift */; };
+		A8EC95022B7D55E700BE8A6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC95012B7D55E700BE8A6B /* User.swift */; };
+		A8EC95042B7DBFE900BE8A6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8EC95032B7DBFE900BE8A6B /* GoogleService-Info.plist */; };
+		A8EC95072B7DC0CF00BE8A6B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A8EC95062B7DC0CF00BE8A6B /* FirebaseAuth */; };
+		A8EC95092B7DC0CF00BE8A6B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A8EC95082B7DC0CF00BE8A6B /* FirebaseFirestore */; };
+		A8EC950B2B7DC0CF00BE8A6B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A8EC950A2B7DC0CF00BE8A6B /* FirebaseFirestoreSwift */; };
+		A8EC950D2B7DC0CF00BE8A6B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A8EC950C2B7DC0CF00BE8A6B /* FirebaseStorage */; };
+		A8EC95112B7DC18500BE8A6B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC95102B7DC18500BE8A6B /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,14 @@
 		A8EC94DD2B756C3400BE8A6B /* athleteiq-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "athleteiq-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EC94E12B756C3400BE8A6B /* athleteiq_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosUITests.swift; sourceTree = "<group>"; };
 		A8EC94E32B756C3400BE8A6B /* athleteiq_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8EC94F72B7AB09800BE8A6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A8EC94F92B7AB21300BE8A6B /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		A8EC94FB2B7C0B0A00BE8A6B /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		A8EC94FD2B7D508100BE8A6B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A8EC94FF2B7D539500BE8A6B /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		A8EC95012B7D55E700BE8A6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A8EC95032B7DBFE900BE8A6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8EC95102B7DC18500BE8A6B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EC95072B7DC0CF00BE8A6B /* FirebaseAuth in Frameworks */,
+				A8EC950D2B7DC0CF00BE8A6B /* FirebaseStorage in Frameworks */,
+				A8EC95092B7DC0CF00BE8A6B /* FirebaseFirestore in Frameworks */,
+				A8EC950B2B7DC0CF00BE8A6B /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +118,12 @@
 		A8EC94C52B756C3200BE8A6B /* athleteiq-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */,
-				A8EC94C82B756C3200BE8A6B /* ContentView.swift */,
+				A8EC94F02B7AAEB700BE8A6B /* App */,
+				A8EC94F12B7AAECA00BE8A6B /* Components */,
+				A8EC94F22B7AAECF00BE8A6B /* Core */,
+				A8EC94F32B7AAED400BE8A6B /* Model */,
 				A8EC94CA2B756C3400BE8A6B /* Assets.xcassets */,
+				A8EC95032B7DBFE900BE8A6B /* GoogleService-Info.plist */,
 				A8EC94CC2B756C3400BE8A6B /* Preview Content */,
 			);
 			path = "athleteiq-ios";
@@ -127,6 +154,83 @@
 			path = "athleteiq-iosUITests";
 			sourceTree = "<group>";
 		};
+		A8EC94F02B7AAEB700BE8A6B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A8EC94F12B7AAECA00BE8A6B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94F92B7AB21300BE8A6B /* InputView.swift */,
+				A8EC94FF2B7D539500BE8A6B /* SettingsRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A8EC94F22B7AAECF00BE8A6B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94F52B7AB06400BE8A6B /* Authentication */,
+				A8EC94F62B7AB07000BE8A6B /* Profile */,
+				A8EC94F42B7AAF2600BE8A6B /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A8EC94F32B7AAED400BE8A6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC95012B7D55E700BE8A6B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8EC94F42B7AAF2600BE8A6B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94C82B756C3200BE8A6B /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A8EC94F52B7AB06400BE8A6B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC950E2B7DC13600BE8A6B /* View */,
+				A8EC950F2B7DC14600BE8A6B /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A8EC94F62B7AB07000BE8A6B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94FD2B7D508100BE8A6B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A8EC950E2B7DC13600BE8A6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC94F72B7AB09800BE8A6B /* LoginView.swift */,
+				A8EC94FB2B7C0B0A00BE8A6B /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8EC950F2B7DC14600BE8A6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC95102B7DC18500BE8A6B /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +247,12 @@
 			dependencies = (
 			);
 			name = "athleteiq-ios";
+			packageProductDependencies = (
+				A8EC95062B7DC0CF00BE8A6B /* FirebaseAuth */,
+				A8EC95082B7DC0CF00BE8A6B /* FirebaseFirestore */,
+				A8EC950A2B7DC0CF00BE8A6B /* FirebaseFirestoreSwift */,
+				A8EC950C2B7DC0CF00BE8A6B /* FirebaseStorage */,
+			);
 			productName = "athleteiq-ios";
 			productReference = A8EC94C32B756C3200BE8A6B /* athleteiq-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +325,9 @@
 				Base,
 			);
 			mainGroup = A8EC94BA2B756C3200BE8A6B;
+			packageReferences = (
+				A8EC95052B7DC0CF00BE8A6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A8EC94C42B756C3200BE8A6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +346,7 @@
 			files = (
 				A8EC94CE2B756C3400BE8A6B /* Preview Assets.xcassets in Resources */,
 				A8EC94CB2B756C3400BE8A6B /* Assets.xcassets in Resources */,
+				A8EC95042B7DBFE900BE8A6B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +371,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EC94F82B7AB09800BE8A6B /* LoginView.swift in Sources */,
+				A8EC94FA2B7AB21300BE8A6B /* InputView.swift in Sources */,
 				A8EC94C92B756C3200BE8A6B /* ContentView.swift in Sources */,
 				A8EC94C72B756C3200BE8A6B /* athleteiq_iosApp.swift in Sources */,
+				A8EC95022B7D55E700BE8A6B /* User.swift in Sources */,
+				A8EC94FE2B7D508100BE8A6B /* ProfileView.swift in Sources */,
+				A8EC94FC2B7C0B0A00BE8A6B /* RegistrationView.swift in Sources */,
+				A8EC95002B7D539500BE8A6B /* SettingsRowView.swift in Sources */,
+				A8EC95112B7DC18500BE8A6B /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +556,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = f;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeiannotti.athleteiq-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = f;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -588,6 +709,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8EC95052B7DC0CF00BE8A6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8EC95062B7DC0CF00BE8A6B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EC95052B7DC0CF00BE8A6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A8EC95082B7DC0CF00BE8A6B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EC95052B7DC0CF00BE8A6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A8EC950A2B7DC0CF00BE8A6B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EC95052B7DC0CF00BE8A6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		A8EC950C2B7DC0CF00BE8A6B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EC95052B7DC0CF00BE8A6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A8EC94BB2B756C3200BE8A6B /* Project object */;
 }
