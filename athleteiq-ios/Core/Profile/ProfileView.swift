@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject var viewModel: AuthViewModel
+    @State private var showingAlert = false
     
     var body: some View {
         if let user = viewModel.currentUser {
@@ -31,7 +32,7 @@ struct ProfileView: View {
                             Text(user.email)
                                 .font(.footnote)
                                 .foregroundColor(.gray)
-    //                        if the text is a string, switch foregroundcolor to accent color.
+                            //                        if the text is a string, switch foregroundcolor to accent color.
                         }
                     }
                     
@@ -56,12 +57,32 @@ struct ProfileView: View {
                     }label: {
                         SettingsRowView(imageName: "arrow.left.circle.fill", title: "Sign out", tintColor: .red)
                     }
-                    Button{
-                        print("Delete account...")
-                    }label: {
+                    Button {
+                        showingAlert = true
+                    } label: {
                         SettingsRowView(imageName: "xmark.circle.fill", title: "Delete account", tintColor: .red)
                     }
                 }
+            }
+            .alert(isPresented: $showingAlert) {
+                Alert(
+                    title: Text("Delete Account"),
+                    message: Text("Are you sure you want to delete your account? This action cannot be undone."),
+                    primaryButton: .destructive(Text("Delete")) {
+                        deleteAccount()
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
+            
+        }
+    }
+    private func deleteAccount() {
+        viewModel.deleteAccount { success in
+            if success {
+                // Handle successful deletion (e.g., navigate to login screen)
+            } else {
+                // Handle deletion failure (e.g., display error message)
             }
         }
     }
@@ -72,4 +93,4 @@ struct ProfileView_Previews: PreviewProvider {
         ProfileView()
     }
 }
- 
+

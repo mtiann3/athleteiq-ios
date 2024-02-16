@@ -60,9 +60,31 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func deleteAccount(){
-        
+    func deleteAccount(completion: @escaping (Bool) -> Void) {
+        // Perform the asynchronous deletion operation
+        Task {
+            do {
+                // 1. Delete user document from Firestore
+                if let uid = userSession?.uid {
+                    try await Firestore.firestore().collection("users").document(uid).delete()
+                }
+                
+                // 2. Delete user's account from Firebase Authentication
+                try await Auth.auth().currentUser?.delete()
+                
+                // 3. Update local session and user data
+                userSession = nil
+                currentUser = nil
+                
+                completion(true) // Notify the caller that deletion is successful
+            } catch {
+                print("DEBUG: Failed to delete account with error \(error.localizedDescription)")
+                completion(false) // Notify the caller that deletion failed
+            }
+        }
     }
+
+
     
     func fetchUser() async {
         guard let uid = Auth.auth().currentUser?.uid else{ return}
