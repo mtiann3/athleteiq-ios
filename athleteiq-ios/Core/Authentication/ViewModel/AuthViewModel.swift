@@ -91,5 +91,18 @@ class AuthViewModel: ObservableObject {
         guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else {return}
         self.currentUser = try? snapshot.data(as: User.self)
     }
+    
+    func resetPassword(forEmail email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                print("Error resetting password: \(error.localizedDescription)")
+                completion(.failure(error))
+            } else {
+                print("Password reset email sent successfully.")
+                completion(.success(()))
+            }
+        }
+    }
+
 }
                         

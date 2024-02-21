@@ -1,53 +1,50 @@
-//
-//  LoginView.swift
-//  athleteiq-ios
-//
-//  Created by Mike Iannotti on 2/12/24.
-//
-
 import SwiftUI
 
-
-//jack was here
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     @EnvironmentObject var viewModel: AuthViewModel
-    
+
     var body: some View {
         NavigationStack {
             VStack {
-                //image
+                // Image
                 Image("firebase-logo")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 100, height: 120)
                     .padding(.vertical, 32)
                 
-                
-                //form fields
-                VStack(spacing: 24){
+                // Form fields
+                VStack(spacing: 24) {
                     InputView(text: $email,
                               title: "Email Address",
                               placeholder: "name@example.com")
-                    .autocapitalization(.none)
+                        .autocapitalization(.none)
                     
                     InputView(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                    
+                    // Forgot Password button
+                    // Forgot Password button
+                    NavigationLink(destination: ForgotPasswordView()) {
+                        Text("Forgot Password?")
+                            .font(.system(size: 14))
+                            .foregroundColor(.blue)
+                    }
+
                 }
                 .padding(.horizontal)
                 .padding(.top, 12)
                 
-                //sign in button
-                
-                Button{
-                    Task{
+                // Sign in button
+                Button {
+                    Task {
                         try await viewModel.signIn(withEmail: email, password: password)
                     }
-                }label: {
+                } label: {
                     HStack {
                         Text("SIGN IN")
                             .fontWeight(.semibold)
-                        
                         Image(systemName: "arrow.right")
                     }
                     .foregroundColor(.white)
@@ -61,13 +58,12 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                
-                //sign up button
-                NavigationLink{
+                // Sign up button
+                NavigationLink {
                     RegistrationView()
                         .navigationBarBackButtonHidden(true)
-                }label: {
-                    HStack(spacing: 3){
+                } label: {
+                    HStack(spacing: 3) {
                         Text("Don't have an account?")
                         Text("Sign up")
                             .fontWeight(.bold)
@@ -77,15 +73,16 @@ struct LoginView: View {
             }
         }
     }
+    
 }
 
 // MARK: - AuthenticationFormProtocol
 extension LoginView: AuthenticationFormProtocol {
     var formIsValid: Bool {
         return !email.isEmpty
-        && email.contains("@")
-        && !password.isEmpty
-        && password.count > 5
+            && email.contains("@")
+            && !password.isEmpty
+            && password.count > 5
     }
 }
 
