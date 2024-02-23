@@ -39,7 +39,11 @@ struct LoginView: View {
                 // Sign in button
                 Button {
                     Task {
+                        ActivityIndicator.show()
+
                         try await viewModel.signIn(withEmail: email, password: password)
+                        ActivityIndicator.hide()
+
                     }
                 } label: {
                     HStack {

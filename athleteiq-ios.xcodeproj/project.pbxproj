@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A89F7C2E2B85429D00F951D4 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F7C2D2B85429D00F951D4 /* ForgotPasswordView.swift */; };
+		A8B6D3FF2B87E4EE00170E18 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B6D3FE2B87E4EE00170E18 /* ActivityIndicator.swift */; };
 		A8EC94C72B756C3200BE8A6B /* athleteiq_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */; };
 		A8EC94C92B756C3200BE8A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC94C82B756C3200BE8A6B /* ContentView.swift */; };
 		A8EC94CB2B756C3400BE8A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EC94CA2B756C3400BE8A6B /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		A89F7C2D2B85429D00F951D4 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		A8B6D3FE2B87E4EE00170E18 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		A8EC94C32B756C3200BE8A6B /* athleteiq-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "athleteiq-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EC94C62B756C3200BE8A6B /* athleteiq_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = athleteiq_iosApp.swift; sourceTree = "<group>"; };
 		A8EC94C82B756C3200BE8A6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				A8EC94F92B7AB21300BE8A6B /* InputView.swift */,
 				A8EC94FF2B7D539500BE8A6B /* SettingsRowView.swift */,
+				A8B6D3FE2B87E4EE00170E18 /* ActivityIndicator.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				A8EC94C92B756C3200BE8A6B /* ContentView.swift in Sources */,
 				A8EC94C72B756C3200BE8A6B /* athleteiq_iosApp.swift in Sources */,
 				A8EC95022B7D55E700BE8A6B /* User.swift in Sources */,
+				A8B6D3FF2B87E4EE00170E18 /* ActivityIndicator.swift in Sources */,
 				A8EC94FE2B7D508100BE8A6B /* ProfileView.swift in Sources */,
 				A8EC94FC2B7C0B0A00BE8A6B /* RegistrationView.swift in Sources */,
 				A8EC95002B7D539500BE8A6B /* SettingsRowView.swift in Sources */,

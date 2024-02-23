@@ -34,6 +34,18 @@ struct ProfileView: View {
                                 .foregroundColor(.gray)
                             //                        if the text is a string, switch foregroundcolor to accent color.
                         }
+                        Spacer()
+                        
+                        Button(action: {
+                            ActivityIndicator.show()
+                        }) {
+                            Image(systemName: "pencil")
+                                .foregroundColor(.white)
+                                .padding(8)
+                                .background(Color.blue)
+                                .clipShape(RoundedRectangle(cornerRadius: 20.0))
+                        }
+                        .padding(.top, 24)
                     }
                     
                 }

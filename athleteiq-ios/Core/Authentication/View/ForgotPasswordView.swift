@@ -3,6 +3,7 @@ import SwiftUI
 struct ForgotPasswordView: View {
     @State private var email = ""
     @State private var showAlert = false
+    @State private var alertMessage = ""
     @EnvironmentObject var viewModel: AuthViewModel
 
     var body: some View {
@@ -17,9 +18,10 @@ struct ForgotPasswordView: View {
                     switch result {
                     case .success:
                         showAlert = true
+                        alertMessage = "An email with password reset instructions has been sent to \(email)."
                     case .failure(let error):
-                        print("Password reset error: \(error.localizedDescription)")
-                        // Handle error as needed
+                        showAlert = true
+                        alertMessage = "Password reset error: \(error.localizedDescription)"
                     }
                 }
             }) {
@@ -28,7 +30,7 @@ struct ForgotPasswordView: View {
             .padding()
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Password Reset"),
-                      message: Text("An email with password reset instructions has been sent to \(email)."),
+                      message: Text(alertMessage),
                       dismissButton: .default(Text("OK")))
             }
         }
