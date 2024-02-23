@@ -59,7 +59,6 @@ struct RegistrationView: View {
             Button{
                 Task{
                     ActivityIndicator.show()
-
                     try await viewModel.createUser(withEmail: email, password: password, fullname: fullname)
                     ActivityIndicator.hide()
 

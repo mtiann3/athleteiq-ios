@@ -36,16 +36,6 @@ struct ProfileView: View {
                         }
                         Spacer()
                         
-                        Button(action: {
-                            ActivityIndicator.show()
-                        }) {
-                            Image(systemName: "pencil")
-                                .foregroundColor(.white)
-                                .padding(8)
-                                .background(Color.blue)
-                                .clipShape(RoundedRectangle(cornerRadius: 20.0))
-                        }
-                        .padding(.top, 24)
                     }
                     
                 }
@@ -63,7 +53,20 @@ struct ProfileView: View {
                     }
                 }
                 
+                Section("Profile") {
+                    ProfileDataView(imageName: "", title: "Birthdate: ", tintColor: .blue)
+                    Text("Height: ")
+                    Text("Weight: ")
+                    
+
+                }
+                
                 Section("Account") {
+                    Button{
+                        
+                    }label: {
+                        SettingsRowView(imageName: "pencil.circle.fill", title: "Edit profile", tintColor: .blue)
+                    }
                     Button{
                         viewModel.signOut()
                     }label: {
@@ -74,7 +77,9 @@ struct ProfileView: View {
                     } label: {
                         SettingsRowView(imageName: "xmark.circle.fill", title: "Delete account", tintColor: .red)
                     }
+                   
                 }
+                
             }
             .alert(isPresented: $showingAlert) {
                 Alert(

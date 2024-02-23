@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ProfileDataView: View {
+    let imageName: String
+    let title: String
+    let tintColor: Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 12) {
+            Text(title)
+                .font(.subheadline)
+                .foregroundColor(.black)
+        }
+        
     }
 }
 
-#Preview {
-    ProfileDataView()
+struct ProfileDataView_Previews: PreviewProvider {
+    static var previews: some View{
+        ProfileDataView(imageName: "gear", title: "Version", tintColor: Color(.systemGray))
+    }
 }
