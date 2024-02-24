@@ -1,19 +1,13 @@
-//
-//  ProfileView.swift
-//  athleteiq-ios
-//
-//  Created by Mike Iannotti on 2/14/24.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @State private var showingAlert = false
+    @State private var showingSheet = false
     
     var body: some View {
         if let user = viewModel.currentUser {
-            List{
+            List {
                 Section {
                     HStack {
                         Text(user.initials)
@@ -24,7 +18,7 @@ struct ProfileView: View {
                             .background(Color(.systemGray3))
                             .clipShape(Circle())
                         
-                        VStack(alignment: .leading, spacing: 4){
+                        VStack(alignment: .leading, spacing: 4) {
                             Text(user.fullName)
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
@@ -32,12 +26,9 @@ struct ProfileView: View {
                             Text(user.email)
                                 .font(.footnote)
                                 .foregroundColor(.gray)
-                            //                        if the text is a string, switch foregroundcolor to accent color.
                         }
                         Spacer()
-                        
                     }
-                    
                 }
                 
                 Section("General") {
@@ -49,7 +40,6 @@ struct ProfileView: View {
                         Text("1.0.0")
                             .font(.subheadline)
                             .foregroundColor(.gray)
-                        
                     }
                 }
                 
@@ -57,29 +47,27 @@ struct ProfileView: View {
                     ProfileDataView(imageName: "", title: "Birthdate: ", tintColor: .blue)
                     Text("Height: ")
                     Text("Weight: ")
-                    
-
                 }
                 
                 Section("Account") {
-                    Button{
-                        
-                    }label: {
+                    Button {
+                        showingSheet.toggle()
+                    } label: {
                         SettingsRowView(imageName: "pencil.circle.fill", title: "Edit profile", tintColor: .blue)
                     }
-                    Button{
+                    
+                    Button {
                         viewModel.signOut()
-                    }label: {
+                    } label: {
                         SettingsRowView(imageName: "arrow.left.circle.fill", title: "Sign out", tintColor: .red)
                     }
+                    
                     Button {
                         showingAlert = true
                     } label: {
                         SettingsRowView(imageName: "xmark.circle.fill", title: "Delete account", tintColor: .red)
                     }
-                   
                 }
-                
             }
             .alert(isPresented: $showingAlert) {
                 Alert(
@@ -91,9 +79,12 @@ struct ProfileView: View {
                     secondaryButton: .cancel()
                 )
             }
-            
+            .sheet(isPresented: $showingSheet) {
+                EditProfileSheetView()
+            }
         }
     }
+    
     private func deleteAccount() {
         viewModel.deleteAccount { success in
             if success {
@@ -110,4 +101,3 @@ struct ProfileView_Previews: PreviewProvider {
         ProfileView()
     }
 }
-
