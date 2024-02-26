@@ -2,22 +2,24 @@ import SwiftUI
 
 struct EditProfileSheetView: View {
     @Environment(\.dismiss) var dismiss
+    @State private var height = ""
+    @State private var weight = ""
+    @State private var birthdate = ""
     
     @State private var showingDiscardAlert = false
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("Edit Profile")
+                Text("Edit Value")
                     .font(.title)
                     .padding()
                 
                 Spacer()
                 List {
-                    Section("Profile") {
-                        Text("Birthdate: ")
-                        Text("Height: ")
-                        Text("Weight: ")
+                    Section {
+                        InputView(text: $birthdate, title: "New Value", placeholder: "")
+                            .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                     }
                 }
             }
@@ -47,17 +49,7 @@ struct EditProfileSheetView: View {
                     }
                 )
             }
-            
-//            FIX THIS
-//            .gesture(
-//                DragGesture()
-//                    .onChanged { gesture in
-//                        // Check if user swiped down
-//                        if gesture.translation.height > 50 {
-//                            self.showingDiscardAlert = true
-//                        }
-//                    }
-//            )
+            .interactiveDismissDisabled()
         }
     }
 }

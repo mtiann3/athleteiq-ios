@@ -3,7 +3,6 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @State private var showingAlert = false
-    @State private var showingSheet = false
     
     var body: some View {
         if let user = viewModel.currentUser {
@@ -44,17 +43,14 @@ struct ProfileView: View {
                 }
                 
                 Section("Profile") {
-                    ProfileDataView(imageName: "", title: "Birthdate: ", tintColor: .blue)
-                    Text("Height: ")
-                    Text("Weight: ")
+                    ProfileDataView(title: "Birthdate: ", value: "03/28/2006", tintColor: .blue, editable: true)
+                    ProfileDataView(title: "Height: ", value: "Enter height", tintColor: .blue, editable: true)
+                    ProfileDataView(title: "Weight: ", value: "", tintColor: .blue, editable: true)
+                    ProfileDataView(title: "AIQ Score: ", value: "89.5", tintColor: .blue, editable: false)
                 }
-                
+
                 Section("Account") {
-                    Button {
-                        showingSheet.toggle()
-                    } label: {
-                        SettingsRowView(imageName: "pencil.circle.fill", title: "Edit profile", tintColor: .blue)
-                    }
+                   
                     
                     Button {
                         viewModel.signOut()
@@ -79,9 +75,7 @@ struct ProfileView: View {
                     secondaryButton: .cancel()
                 )
             }
-            .sheet(isPresented: $showingSheet) {
-                EditProfileSheetView()
-            }
+            
         }
     }
     
