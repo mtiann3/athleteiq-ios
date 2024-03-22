@@ -7,20 +7,28 @@ struct ContentView: View {
     var body: some View {
         Group {
             if viewModel.userSession != nil {
-                ProfileView()
-                    .sheet(isPresented: $showingSheet) {
-                        EditProfileSheetView()
-                    }
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: {
-                                showingSheet.toggle()
-                            }) {
-                                Image(systemName: "square.and.pencil")
-                                    .imageScale(.large)
-                            }
+                
+                
+                TabView{
+                    HomeView()
+                        .tabItem {
+                            Label("Dashboard", systemImage: "house")
                         }
-                    }
+                    
+                    
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile", systemImage: "person")
+                        }                    .sheet(isPresented: $showingSheet) {
+                            EditProfileSheetView(firestoreData: "fullName")
+                        }
+                }
+                
+                
+                
+                
+                
+                
             } else {
                 LoginView()
             }
@@ -33,3 +41,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

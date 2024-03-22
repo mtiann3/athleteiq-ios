@@ -5,6 +5,8 @@ struct ProfileDataView: View {
     let value: String
     let tintColor: Color
     let editable: Bool 
+    let image: String
+
     @State private var showingSheet = false
     var displayValue: String {
             if value.isEmpty {
@@ -18,7 +20,7 @@ struct ProfileDataView: View {
     var body: some View {
         HStack(spacing: 12) {
             VStack(alignment: .leading, spacing: 12) {
-                Text(title)
+                Text("\(title): ")
                     .font(.subheadline)
                     .foregroundColor(.black)
                 
@@ -33,7 +35,7 @@ struct ProfileDataView: View {
                 Button(action: {
                     showingSheet.toggle()
                 }) {
-                    Image(systemName: "pencil.circle.fill")
+                    Image(systemName: image)
                         .imageScale(.medium)
                         .font(.title)
                         .foregroundColor(tintColor)
@@ -48,16 +50,17 @@ struct ProfileDataView: View {
             }) {
                 EmptyView()
             }
-            .buttonStyle(PlainButtonStyle())
+            
         )
         .sheet(isPresented: $showingSheet) {
-            EditProfileSheetView()
+            EditProfileSheetView(firestoreData: title)
+                .presentationDetents([.medium])
         }
     }
 }
 
 struct ProfileDataView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileDataView(title: "Version", value: "", tintColor: Color(.systemGray), editable: true)
+        ProfileDataView(title: "Version", value: "", tintColor: Color(.systemGray), editable: true, image:"pencil.circle.fill" )
     }
 }

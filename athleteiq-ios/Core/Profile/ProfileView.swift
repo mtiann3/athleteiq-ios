@@ -3,7 +3,8 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @State private var showingAlert = false
-    
+    @State private var showingSheet = false
+
     var body: some View {
         if let user = viewModel.currentUser {
             List {
@@ -21,14 +22,25 @@ struct ProfileView: View {
                             Text(user.fullName)
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
-                                .padding(.top, 4)
                             Text(user.email)
                                 .font(.footnote)
                                 .foregroundColor(.gray)
                         }
+                        
                         Spacer()
+                        
+                        Button(action: {
+                            showingSheet.toggle()
+                        }) {
+                            Image(systemName: "pencil.circle.fill")
+                                .font(.title)
+                                .foregroundColor(.blue)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
+                    .padding(.vertical, 8)
                 }
+
                 
                 Section("General") {
                     HStack {
@@ -43,11 +55,14 @@ struct ProfileView: View {
                 }
                 
                 Section("Profile") {
-                    ProfileDataView(title: "Birthdate: ", value: "03/28/2006", tintColor: .blue, editable: true)
-                    ProfileDataView(title: "Height: ", value: "Enter height", tintColor: .blue, editable: true)
-                    ProfileDataView(title: "Weight: ", value: "", tintColor: .blue, editable: true)
-                    ProfileDataView(title: "AIQ Score: ", value: "89.5", tintColor: .blue, editable: false)
+                    ProfileDataView(title: "Birthdate", value: user.birthdate != nil ? "\(String(describing: user.birthdate))" : "Not set", tintColor: .blue, editable: true, image: "pencil.circle.fill")
+                    
+                    ProfileDataView(title: "Height", value: user.height != 0 ? "\(user.height)" : "Not set",tintColor: .blue, editable: true, image: "plus.circle.fill")
+                    
+//                    ProfileDataView(title: "Weight", value: user.w != nil ? formatDate(user.birthdate!) : "Not set",, editable: true, image: "plus.circle.fill")
                 }
+
+
 
                 Section("Account") {
                    
@@ -75,6 +90,10 @@ struct ProfileView: View {
                     secondaryButton: .cancel()
                 )
             }
+            .sheet(isPresented: $showingSheet) {
+                EditProfileSheetView(firestoreData: "fullName")
+                    .presentationDetents([.medium])
+            }
             
         }
     }
@@ -87,6 +106,13 @@ struct ProfileView: View {
                 // Handle deletion failure (e.g., display error message)
             }
         }
+    }
+    
+    private func formatDate(_ date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        return dateFormatter.string(from: date)
     }
 }
 
